@@ -43,17 +43,19 @@ import java.util.TimerTask;
 import javax.json.JsonObject;
 
 public class MainActivity extends AppCompatActivity {
-    private static int RESULT_LOAD_IMAGE = 1;
+    //variable for android
     private ImageView imageView1;
     private ImageView imageView2;
     private TextView textView;
     private TextView textView2;
+    //variable for image data
     public static byte[] data1;
+    //variable for toSpeech
     public TextToSpeech toSpeech;
     int result;
+    //variable for detection result
     public float[][] path;
     public String string;
-    public String string2;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

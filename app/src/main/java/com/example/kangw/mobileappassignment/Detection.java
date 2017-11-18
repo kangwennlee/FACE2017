@@ -98,7 +98,7 @@ public class Detection {
                     ageConfidence = attributes.getJsonNumber("ageConfidence").doubleValue();
                     emotion = attributes.getJsonString("emotion").getString();
                     emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
-                    detectionString += "\nPerson " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
+                    detectionString += "\nFace " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
                 }
             }
         }
