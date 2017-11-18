@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -88,12 +91,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private static void annotateImage(Bitmap bmp){
+        Canvas cnvs=new Canvas(bmp);
+        Paint paint=new Paint();
+        paint.setColor(Color.RED);
+    }
+
     class NetworkAsyncTask extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... params) {
             try {
-                MainActivity.string = Detection.step2_GetResult(MainActivity.data1);
+                MainActivity.string = Detection.detection_GetResult(MainActivity.data1);
             } catch (Exception e) {
                 e.printStackTrace();
             }

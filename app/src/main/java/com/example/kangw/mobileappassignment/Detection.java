@@ -72,18 +72,34 @@ public class Detection {
         }
     }
 
-    public static String step2_GetResult(byte[] data) throws IOException {
+    public static String detection_GetResult(byte[] data) throws IOException {
         logger.info("*** Step 2 - Retrieve the Face Detection ***");
         final String api = BASE_URL + "detections?";
         JsonObject result = httpCall(api, "POST", contentTypeStream, data);
-        JsonArray objects = result.getJsonArray("objects");
-        JsonObject attributes = objects.getJsonObject(1).getJsonObject("attributes");
-        String gender = attributes.getJsonString("gender").getString();
-        double genderConfidence = attributes.getJsonNumber("genderConfidence").doubleValue();
-        int age = attributes.getJsonNumber("age").intValue();
-        double ageConfidence = attributes.getJsonNumber("ageConfidence").doubleValue();
-        String emotion = attributes.getJsonString("emotion").getString();
-        double emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
-        return ("Gender: " + gender + "Gender Confidence: " + genderConfidence + "age: " + age + "Age Confidence: " + ageConfidence + "Emotion: " + emotion + "Emotion Confidence" + emotionConfidence);
+        String gender = null;
+        double genderConfidence = 0;
+        int age = 0;
+        double ageConfidence = 0;
+        String emotion = null;
+        double emotionConfidence = 0;
+        int faceFound = 0;
+        String detectionString=null;
+        if (result != null) {
+            JsonArray objects = result.getJsonArray("objects");
+            for (int i = 0; i < objects.size(); i++) {
+                if ("face".equals(objects.getJsonObject(i).getJsonString("type").getString())) {
+                    faceFound++;
+                    JsonObject attributes = objects.getJsonObject(i).getJsonObject("attributes");
+                    gender = attributes.getJsonString("gender").getString();
+                    genderConfidence = attributes.getJsonNumber("genderConfidence").doubleValue();
+                    age = attributes.getJsonNumber("age").intValue();
+                    ageConfidence = attributes.getJsonNumber("ageConfidence").doubleValue();
+                    emotion = attributes.getJsonString("emotion").getString();
+                    emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
+                    detectionString+="\nPerson " + faceFound + ": " + "Gender: " + gender + "Gender Confidence: " + genderConfidence + "Age: " + age + "age Confidence: " + ageConfidence + "Emotion: " + emotion + "EmotionConfidence: " + emotionConfidence;
+                }
+            }
+        }
+        return (detectionString);
     }
 }
