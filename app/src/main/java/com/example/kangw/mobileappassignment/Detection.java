@@ -28,6 +28,9 @@ public class Detection {
 
     // java logging
     private static Logger logger = Logger.getLogger(Detection.class.getName());
+    public final static String api = BASE_URL + "detections?";
+    public static JsonObject result;
+    public static String personString = null;
 
     // Define a generic callback to be used for outputting responses and errors
     private static void genericCallback(boolean error, int statusCode,
@@ -74,8 +77,7 @@ public class Detection {
 
     public static String detection_GetResult(byte[] data) throws IOException {
         logger.info("*** Step 2 - Retrieve the Face Detection ***");
-        final String api = BASE_URL + "detections?";
-        JsonObject result = httpCall(api, "POST", contentTypeStream, data);
+        result = httpCall(api, "POST", contentTypeStream, data);
         String gender = null;
         double genderConfidence = 0;
         int age = 0;
@@ -83,7 +85,7 @@ public class Detection {
         String emotion = null;
         double emotionConfidence = 0;
         int faceFound = 0;
-        String detectionString=null;
+        String detectionString = null;
         if (result != null) {
             JsonArray objects = result.getJsonArray("objects");
             for (int i = 0; i < objects.size(); i++) {
@@ -96,10 +98,53 @@ public class Detection {
                     ageConfidence = attributes.getJsonNumber("ageConfidence").doubleValue();
                     emotion = attributes.getJsonString("emotion").getString();
                     emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
-                    detectionString+="\nPerson " + faceFound + ": " + "Gender: " + gender + "Gender Confidence: " + genderConfidence + "Age: " + age + "age Confidence: " + ageConfidence + "Emotion: " + emotion + "EmotionConfidence: " + emotionConfidence;
+                    detectionString += "\nPerson " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
                 }
             }
         }
-        return (detectionString);
+        return detectionString;
+    }
+
+    public static float[][] detection_GetLine(){
+        JsonArray objects2 = result.getJsonArray("objects");
+        float[][] pth=new float[objects2.size()][16];
+        int x = 0;
+        int y = 0;
+        int height = 0;
+        int width = 0;
+        int personFound = 0;
+        for (int i = 0; i < objects2.size(); i++) {
+            if ("person".equals(objects2.getJsonObject(i).getJsonString("type").getString())) {
+                personFound++;
+                JsonObject boundingBox = objects2.getJsonObject(i).getJsonObject("boundingBox");
+                x = boundingBox.getJsonNumber("x").intValue();
+                y = boundingBox.getJsonNumber("y").intValue()+70;
+                height = boundingBox.getJsonNumber("height").intValue();
+                width = boundingBox.getJsonNumber("width").intValue();
+                personString +="\nPerson "+ personFound+" : "+" x: "+x + " | y: " + y + " | height: " + height + " | width: " + width;
+            }
+            //line1
+            pth[i][0] = x;
+            pth[i][1] = y;
+            pth[i][2] = x + width;
+            pth[i][3] = y;
+            //line2
+            pth[i][4] = x;
+            pth[i][5] = y;
+            pth[i][6] = x;
+            pth[i][7] = y-height;
+            //line3
+            pth[i][8] = x+width;
+            pth[i][9] = y;
+            pth[i][10] = x + width;
+            pth[i][11] = y - height;
+            //line4
+            pth[i][12] = x;
+            pth[i][13] = y - height;
+            pth[i][14] = x + width;
+            pth[i][15] = y - height;
+        }
+
+        return pth;
     }
 }
