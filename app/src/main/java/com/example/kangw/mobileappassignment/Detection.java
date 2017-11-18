@@ -85,7 +85,7 @@ public class Detection {
         String emotion = null;
         double emotionConfidence = 0;
         int faceFound = 0;
-        String detectionString = null;
+        String detectionString = "Face Detection: ";
         if (result != null) {
             JsonArray objects = result.getJsonArray("objects");
             for (int i = 0; i < objects.size(); i++) {
@@ -113,7 +113,7 @@ public class Detection {
         int height = 0;
         int width = 0;
         int personFound = 0;
-        personString=null;
+        personString="Person Found: ";
         for (int i = 0; i < objects2.size(); i++) {
             if ("person".equals(objects2.getJsonObject(i).getJsonString("type").getString())) {
                 personFound++;
