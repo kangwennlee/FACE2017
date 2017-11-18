@@ -113,6 +113,7 @@ public class Detection {
         int height = 0;
         int width = 0;
         int personFound = 0;
+        personString=null;
         for (int i = 0; i < objects2.size(); i++) {
             if ("person".equals(objects2.getJsonObject(i).getJsonString("type").getString())) {
                 personFound++;
