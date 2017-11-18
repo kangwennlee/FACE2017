@@ -30,4 +30,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile files('src/main/java/com/example/kangw/mobileappassignment/javax.json-1.0.4.jar')
+    compile files('src/main/java/com/example/kangw/mobileappassignment/javax.json-1.0.4.jar')
 }

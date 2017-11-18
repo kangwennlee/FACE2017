@@ -13,6 +13,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.Image;
 import android.net.Uri;
+import android.os.Handler;
 import android.os.AsyncTask;
 import android.os.CountDownTimer;
 import android.os.Environment;
@@ -52,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
     public static byte[] data1;
     //variable for toSpeech
     public TextToSpeech toSpeech;
-    int result;
+    public int result;
+    public String text;
     //variable for detection result
     public float[][] path;
     public String string;
@@ -76,8 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        String text = textView.getText().toString();
-        toSpeech.speak(text,TextToSpeech.QUEUE_FLUSH,null);
+
         buttonLoadImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -85,6 +86,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+       /* final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    Toast.makeText(getApplicationContext(), "Feature not supported in your device.", Toast.LENGTH_SHORT).show();
+                } else {
+                    text = textView.getText().toString();
+                    toSpeech.speak("Hello world", TextToSpeech.QUEUE_FLUSH, null);
+
+                }
+            }
+        }, 3000);*/
     }
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -111,8 +125,11 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("Please wait...");
             new CountDownTimer(4000, 1000) {
                 public void onFinish() {
+                    //Person detection
                     textView2.setText(Detection.personString);
+                    //Face detection
                     textView.setText(string);
+                    //Add rectangle into image
                     annotateImage(imageBitmap);
                 }
                 public void onTick(long millisUntilFinished) {
@@ -120,6 +137,19 @@ public class MainActivity extends AppCompatActivity {
                 }
             }.start();
         }
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    Toast.makeText(getApplicationContext(), "Feature not supported in your device.", Toast.LENGTH_SHORT).show();
+                } else {
+                    text = textView.getText().toString();
+                    toSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+
+                }
+            }
+        }, 5000);
     }
 
     private void annotateImage(Bitmap bmp){
@@ -145,6 +175,15 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             return null;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(toSpeech != null){
+            toSpeech.stop();
+            toSpeech.shutdown();
         }
     }
 }
