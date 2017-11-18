@@ -98,7 +98,7 @@ public class Detection {
                     ageConfidence = attributes.getJsonNumber("ageConfidence").doubleValue();
                     emotion = attributes.getJsonString("emotion").getString();
                     emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
-                    detectionString += "\nPerson " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
+                    detectionString += "\nFace " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
                 }
             }
         }
@@ -113,6 +113,7 @@ public class Detection {
         int height = 0;
         int width = 0;
         int personFound = 0;
+        personString=null;
         for (int i = 0; i < objects2.size(); i++) {
             if ("person".equals(objects2.getJsonObject(i).getJsonString("type").getString())) {
                 personFound++;
