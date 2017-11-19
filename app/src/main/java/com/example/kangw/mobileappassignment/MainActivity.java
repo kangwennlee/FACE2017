@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("");
                 textView2.setText("");
                 textView3.setText("");
+                textView4.setText("");
                 dispatchTakePictureIntent();
             }
         });
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             data1 = baos.toByteArray();
             NetworkAsyncTask asyncTask = new NetworkAsyncTask();
             asyncTask.execute();
-            new CountDownTimer(7000, 1000) {
+            new CountDownTimer(9000, 1000) {
                 public void onFinish() {
                     textView4.setText(carPlate);
                     //Person recognition
@@ -150,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
                     textView2.setText(Detection.personString);
                     //Add rectangle into image
                     annotateImage(imageBitmap);
+
                 }
                 public void onTick(long millisUntilFinished) {
                     // millisUntilFinished    The amount of time until finished.
@@ -163,15 +165,16 @@ public class MainActivity extends AppCompatActivity {
                     if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                         Toast.makeText(getApplicationContext(), "Feature not supported in your device.", Toast.LENGTH_SHORT).show();
                     } else {
-                        for(int i =0;i<Detection.person.length;i++){
+                        /*for(int i =0;i<Detection.person.length;i++){
                             if(Detection.person[i][0]!=null){
                                 text += Detection.person[i][0]+" is feeling "+Detection.person[i][1];
                             }
-                        }
+                        }*/
+                        text = Detection.objectName+" is feeling "+Detection.emotion;
                         toSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
                     }
                 }
-            }, 7000);
+            }, 9000);
         }
 
 

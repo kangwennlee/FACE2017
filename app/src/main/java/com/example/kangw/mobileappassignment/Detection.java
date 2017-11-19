@@ -30,7 +30,7 @@ public class Detection {
     // java logging
     private static Logger logger = Logger.getLogger(Detection.class.getName());
     public final static String apiD = BASE_URL + "detections?";
-    private final static String apiR = String.format("%srecognition?groupId=%s", BASE_URL, "friends", "UTF-8");
+    private final static String apiR = String.format("%srecognition?groupId=%s", BASE_URL, "family", "UTF-8");
     public final static String apiC = BASE_URL + "recognition?objectType=vehicle,licenseplate";
     public static JsonObject result;
     public static String personString = "";
@@ -38,7 +38,7 @@ public class Detection {
     public static String gender = "";
     public static String objectName = "";
     public static String carName = "";
-    public static String[][] person = new String[3][2];
+    //public static String[][] person = new String[5][2];
 
     // Define a generic callback to be used for outputting responses and errors
     private static void genericCallback(boolean error, int statusCode,
@@ -105,7 +105,7 @@ public class Detection {
                     emotion = attributes.getJsonString("emotion").getString();
                     emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
                     detectionString += "\nFace " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
-                    person[faceFound][1]=emotion;
+                    //person[faceFound][1]=emotion;
                 }
             }
         }
@@ -168,7 +168,6 @@ public class Detection {
                 objectName = objects.getJsonObject(0).getString("objectId");
                 recognitionConfidence = objects.getJsonObject(0).getJsonObject("faceAnnotation").getJsonNumber("recognitionConfidence").doubleValue();
                 detectedPerson += "\nName: " + objectName + " Confidence: " + recognitionConfidence;
-                person[i][0]=objectName;
             }
         }
         return detectedPerson;
