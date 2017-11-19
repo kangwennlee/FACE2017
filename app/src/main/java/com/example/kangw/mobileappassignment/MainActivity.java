@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             data1 = baos.toByteArray();
             NetworkAsyncTask asyncTask = new NetworkAsyncTask();
             asyncTask.execute();
-            new CountDownTimer(9000, 1000) {
+            new CountDownTimer(10000, 1000) {
                 public void onFinish() {
                     textView4.setText(carPlate);
                     //Person recognition
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                         toSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null);
                     }
                 }
-            }, 9000);
+            }, 10000);
         }
 
 

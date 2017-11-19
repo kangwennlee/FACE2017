@@ -165,8 +165,8 @@ public class Detection {
         objectName="";
         if(result!=null){
             for(int i=0;i<objects.size();i++){
-                objectName = objects.getJsonObject(0).getString("objectId");
-                recognitionConfidence = objects.getJsonObject(0).getJsonObject("faceAnnotation").getJsonNumber("recognitionConfidence").doubleValue();
+                objectName = objects.getJsonObject(i).getString("objectId");
+                recognitionConfidence = objects.getJsonObject(i).getJsonObject("faceAnnotation").getJsonNumber("recognitionConfidence").doubleValue();
                 detectedPerson += "\nName: " + objectName + " Confidence: " + recognitionConfidence;
             }
         }
