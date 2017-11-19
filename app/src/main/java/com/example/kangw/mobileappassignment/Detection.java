@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.logging.Logger;
 
 import javax.json.Json;
@@ -19,7 +20,7 @@ import javax.json.JsonReader;
 public class Detection {
 
     // TODO: Replace TOKEN with your own Sighthound Cloud Token
-    public static final String TOKEN = "xd4FUSLqx9ZFdKWv2BfPhW9Wq2534NnNAYqG";
+    public static final String TOKEN = "taxiwbbtopjO82jEVvkCDh0mlpZBE2B2wy1x";
     public static final String BASE_URL = "https://dev.sighthoundapi.com/v1/";
 
     // contentType
@@ -28,9 +29,16 @@ public class Detection {
 
     // java logging
     private static Logger logger = Logger.getLogger(Detection.class.getName());
-    public final static String api = BASE_URL + "detections?";
+    public final static String apiD = BASE_URL + "detections?";
+    private final static String apiR = String.format("%srecognition?groupId=%s", BASE_URL, "friends", "UTF-8");
+    public final static String apiC = BASE_URL + "recognition?objectType=vehicle,licenseplate";
     public static JsonObject result;
-    public static String personString = null;
+    public static String personString = "";
+    public static String emotion = "";
+    public static String gender = "";
+    public static String objectName = "";
+    public static String carName = "";
+    public static String[][] person = new String[3][2];
 
     // Define a generic callback to be used for outputting responses and errors
     private static void genericCallback(boolean error, int statusCode,
@@ -77,12 +85,10 @@ public class Detection {
 
     public static String detection_GetResult(byte[] data) throws IOException {
         logger.info("*** Step 2 - Retrieve the Face Detection ***");
-        result = httpCall(api, "POST", contentTypeStream, data);
-        String gender = null;
+        result = httpCall(apiD, "POST", contentTypeStream, data);
         double genderConfidence = 0;
         int age = 0;
         double ageConfidence = 0;
-        String emotion = null;
         double emotionConfidence = 0;
         int faceFound = 0;
         String detectionString = "Face Detection: ";
@@ -99,6 +105,7 @@ public class Detection {
                     emotion = attributes.getJsonString("emotion").getString();
                     emotionConfidence = attributes.getJsonNumber("emotionConfidence").doubleValue();
                     detectionString += "\nFace " + faceFound + ": " + " Gender: " + gender + " | Gender Confidence: " + genderConfidence + " | Age: " + age + " | age Confidence: " + ageConfidence + " | Emotion: " + emotion + " | EmotionConfidence: " + emotionConfidence;
+                    person[faceFound][1]=emotion;
                 }
             }
         }
@@ -106,18 +113,18 @@ public class Detection {
     }
 
     public static float[][] detection_GetLine(){
-        JsonArray objects2 = result.getJsonArray("objects");
-        float[][] pth=new float[objects2.size()][16];
+        JsonArray objects = result.getJsonArray("objects");
+        float[][] pth=new float[objects.size()][16];
         int x = 0;
         int y = 0;
         int height = 0;
         int width = 0;
         int personFound = 0;
         personString="Person Found: ";
-        for (int i = 0; i < objects2.size(); i++) {
-            if ("person".equals(objects2.getJsonObject(i).getJsonString("type").getString())) {
+        for (int i = 0; i < objects.size(); i++) {
+            if ("person".equals(objects.getJsonObject(i).getJsonString("type").getString())) {
                 personFound++;
-                JsonObject boundingBox = objects2.getJsonObject(i).getJsonObject("boundingBox");
+                JsonObject boundingBox = objects.getJsonObject(i).getJsonObject("boundingBox");
                 x = boundingBox.getJsonNumber("x").intValue();
                 y = boundingBox.getJsonNumber("y").intValue()+70;
                 height = boundingBox.getJsonNumber("height").intValue();
@@ -147,5 +154,44 @@ public class Detection {
         }
 
         return pth;
+    }
+
+    public static String recognition_GetResult(byte[] data)throws IOException{
+        logger.info("*** Step 2 - Retrieve the Face Recognition ***");
+        result = httpCall(apiR, "POST", contentTypeStream, data);
+        JsonArray objects = result.getJsonArray("objects");
+        double recognitionConfidence;
+        String detectedPerson = "Person Detected: ";
+        objectName="";
+        if(result!=null){
+            for(int i=0;i<objects.size();i++){
+                objectName = objects.getJsonObject(0).getString("objectId");
+                recognitionConfidence = objects.getJsonObject(0).getJsonObject("faceAnnotation").getJsonNumber("recognitionConfidence").doubleValue();
+                detectedPerson += "\nName: " + objectName + " Confidence: " + recognitionConfidence;
+                person[i][0]=objectName;
+            }
+        }
+        return detectedPerson;
+    }
+
+    public static String detect_CarPlate(byte[] data)throws IOException{
+        logger.info("*** Step 2 - Retrieve the Car Plate ***");
+        result = httpCall(apiC, "POST", contentTypeStream, data);
+        String carPlateNumber="Car Plate: ";
+        carName="";
+        if(result!=null){
+            JsonArray objects = result.getJsonArray("objects");
+            for(int i=0;i<objects.size();i++){
+                JsonObject vehicleAnnotation = objects.getJsonObject(i).getJsonObject("vehicleAnnotation");
+                JsonObject licenseplate = vehicleAnnotation.getJsonObject("licenseplate");
+                JsonObject licenseBounding = licenseplate.getJsonObject("bounding");
+                JsonObject licenseAttributes = licenseplate.getJsonObject("attributes");
+                JsonObject licenseSystem = licenseAttributes.getJsonObject("system");
+                JsonObject licenseSystemString = licenseSystem.getJsonObject("string");
+                String licenseSystemStringName = licenseSystemString.getString("name");
+                carPlateNumber+=licenseSystemStringName;
+            }
+        }
+        return carPlateNumber;
     }
 }
