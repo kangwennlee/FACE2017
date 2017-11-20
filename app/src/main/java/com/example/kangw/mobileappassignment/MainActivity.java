@@ -120,10 +120,31 @@ public class MainActivity extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
+    private static final String FRAGMENT_DIALOG = "dialog";
+
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_GRANTED) {
+        } else if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                Manifest.permission.CAMERA)) {
+            ConfirmationDialogFragment
+                    .newInstance(R.string.camera_permission_confirmation,
+                            new String[]{Manifest.permission.CAMERA},
+                            REQUEST_IMAGE_CAPTURE,
+                            R.string.camera_permission_not_granted)
+                    .show(getSupportFragmentManager(), FRAGMENT_DIALOG);
+        } else {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA},
+                    REQUEST_IMAGE_CAPTURE);
         }
     }
 
@@ -190,6 +211,23 @@ public class MainActivity extends AppCompatActivity {
         imageView2.setImageDrawable(new BitmapDrawable(getResources(), tempBitmap));
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case REQUEST_IMAGE_CAPTURE:
+                if (permissions.length != 1 || grantResults.length != 1) {
+                    throw new RuntimeException("Error on requesting camera permission.");
+                }
+                if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this, R.string.camera_permission_not_granted,
+                            Toast.LENGTH_SHORT).show();
+                }
+                // No need to start camera here; it is handled by onResume
+                break;
+        }
+    }
+
     class NetworkAsyncTask extends AsyncTask<Void, Void, Void> {
 
         @Override
@@ -204,5 +242,56 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
+    }
+
+    public static class ConfirmationDialogFragment extends DialogFragment {
+
+        private static final String ARG_MESSAGE = "message";
+        private static final String ARG_PERMISSIONS = "permissions";
+        private static final String ARG_REQUEST_CODE = "request_code";
+        private static final String ARG_NOT_GRANTED_MESSAGE = "not_granted_message";
+
+        public static ConfirmationDialogFragment newInstance(@StringRes int message,
+                                                             String[] permissions, int requestCode, @StringRes int notGrantedMessage) {
+            ConfirmationDialogFragment fragment = new ConfirmationDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_MESSAGE, message);
+            args.putStringArray(ARG_PERMISSIONS, permissions);
+            args.putInt(ARG_REQUEST_CODE, requestCode);
+            args.putInt(ARG_NOT_GRANTED_MESSAGE, notGrantedMessage);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @NonNull
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            final Bundle args = getArguments();
+            return new AlertDialog.Builder(getActivity())
+                    .setMessage(args.getInt(ARG_MESSAGE))
+                    .setPositiveButton(android.R.string.ok,
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    String[] permissions = args.getStringArray(ARG_PERMISSIONS);
+                                    if (permissions == null) {
+                                        throw new IllegalArgumentException();
+                                    }
+                                    ActivityCompat.requestPermissions(getActivity(),
+                                            permissions, args.getInt(ARG_REQUEST_CODE));
+                                }
+                            })
+                    .setNegativeButton(android.R.string.cancel,
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Toast.makeText(getActivity(),
+                                            args.getInt(ARG_NOT_GRANTED_MESSAGE),
+                                            Toast.LENGTH_SHORT).show();
+                                }
+                            })
+                    .create();
+        }
+
     }
 }
