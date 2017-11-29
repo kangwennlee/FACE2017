@@ -20,7 +20,7 @@ import javax.json.JsonReader;
 public class Detection {
 
     // TODO: Replace TOKEN with your own Sighthound Cloud Token
-    public static final String TOKEN = "taxiwbbtopjO82jEVvkCDh0mlpZBE2B2wy1x";
+    public static final String TOKEN = "";
     public static final String BASE_URL = "https://dev.sighthoundapi.com/v1/";
 
     // contentType
