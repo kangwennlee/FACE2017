@@ -1,0 +1,39 @@
+.jumbotron {
+    background-color: white;
+}
+
+.jumbotron-fluid {
+    background-color: white;
+}
+
+.r-content {
+    font-size: 1.15rem;
+}
+
+.card-title {
+    text-decoration: underline;
+}
+
+.btn-light {
+    color: #111;
+    background-color: white;
+    border-color: black;
+}
+
+.btn-light:disabled {
+    border-color: gray;
+}
+
+.f-countour {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 300px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.error-alert {
+    position: absolute;
+    width: 100%
+}

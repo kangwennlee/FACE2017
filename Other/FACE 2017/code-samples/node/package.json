@@ -1,0 +1,21 @@
+{
+  "name": "sighthound-cloud-reco-demo",
+  "version": "1.0.0",
+  "description": "A demo app to test Sighthound Cloud API for Face Recognition",
+  "main": "recognition.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "face recognition",
+    "sighthound cloud",
+    "face detection"
+  ],
+  "author": "Sighthound, Inc. <support@sighthound.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.2",
+    "gm": "^1.21.1",
+    "request": "^2.69.0"
+  }
+}

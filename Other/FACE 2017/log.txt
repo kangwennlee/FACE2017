@@ -1,0 +1,296 @@
+run:
+Nov 17, 2017 9:57:20 PM Recognition main
+INFO: C:\Users\Kangwenn\Desktop\JavaApplication13\..\..\images
+Nov 17, 2017 9:57:20 PM Recognition step1_UploadImages
+INFO: *** STEP 1 - Upload Images ***
+Nov 17, 2017 9:57:23 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9156.jpg","requestId":"055feb83440549b79744fac7d04cb5a3","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":299,"y":156},{"x":427,"y":156},{"x":427,"y":282},{"x":299,"y":282}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:26 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9154.jpg","requestId":"bc2de1ab26a14627a6f64a5dfa1530de","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":198,"y":165},{"x":326,"y":165},{"x":326,"y":307},{"x":198,"y":307}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:26 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9153.jpg","requestId":"11c6dc2f101c4aa3a89f7715cb38b802","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":232,"y":157},{"x":368,"y":157},{"x":368,"y":299},{"x":232,"y":299}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:28 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9159.jpg","requestId":"9459b4c5af5246e5bfeddaecf9699440","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":326,"y":207},{"x":448,"y":207},{"x":448,"y":306},{"x":326,"y":306}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:28 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9157.jpg","requestId":"0d14216e2d5445bebf8fcbbf464bbaed","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":337,"y":182},{"x":471,"y":182},{"x":471,"y":298},{"x":337,"y":298}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:28 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9158.jpg","requestId":"91f53fb69b28466b8bd1e464c61adcdd","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":347,"y":195},{"x":465,"y":195},{"x":465,"y":302},{"x":347,"y":302}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:28 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9162.jpg","requestId":"b14e3da096fe4bac85f9a8eed636537d","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":348,"y":160},{"x":463,"y":160},{"x":463,"y":279},{"x":348,"y":279}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:29 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9160.jpg","requestId":"3652c20e2e184a3fb9357c19c2996b90","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":324,"y":196},{"x":442,"y":196},{"x":442,"y":299},{"x":324,"y":299}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:30 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9161.jpg","requestId":"4d581ccda39e4cd5876e680db104f0b9","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":352,"y":169},{"x":471,"y":169},{"x":471,"y":282},{"x":352,"y":282}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:30 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9164.jpg","requestId":"15dfee3bc9994fc2ba22456dc56d584f","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":339,"y":153},{"x":469,"y":153},{"x":469,"y":271},{"x":339,"y":271}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:30 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9165.jpg","requestId":"c77b52063fe04ce385fbdfd616dd3812","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":304,"y":161},{"x":426,"y":161},{"x":426,"y":269},{"x":304,"y":269}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:31 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9163.jpg","requestId":"4ffaa391f54546d59594c7db08479848","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":321,"y":150},{"x":441,"y":150},{"x":441,"y":280},{"x":321,"y":280}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:31 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9170.jpg","requestId":"829bf544b22b4ea0950779e14b872dcc","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":359,"y":114},{"x":558,"y":114},{"x":558,"y":316},{"x":359,"y":316}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:31 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9171.jpg","requestId":"e1b50bb1ce13416cb1ec9aa9edd5fd2e","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":323,"y":97},{"x":541,"y":97},{"x":541,"y":301},{"x":323,"y":301}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:32 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9166.jpg","requestId":"3ded85d87b7f4f8493af76c32a5c2978","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":297,"y":149},{"x":433,"y":149},{"x":433,"y":285},{"x":297,"y":285}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:33 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9174.jpg","requestId":"a811b731661d4c7e9f1a2e8047c45164","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":298,"y":100},{"x":494,"y":100},{"x":494,"y":306},{"x":298,"y":306}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:33 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9173.jpg","requestId":"ab803a0f5c9e4537992344c0f03e692f","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":310,"y":99},{"x":515,"y":99},{"x":515,"y":312},{"x":310,"y":312}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:33 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9172.jpg","requestId":"153db107a2854e7aafae7a56d94df922","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":356,"y":104},{"x":561,"y":104},{"x":561,"y":304},{"x":356,"y":304}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:33 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9175.jpg","requestId":"209b3ef7bbb44912867d5abb9515296b","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":388,"y":113},{"x":581,"y":113},{"x":581,"y":322},{"x":388,"y":322}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:33 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9177.jpg","requestId":"d54cfc36d98542e79f14f47570eb7dcd","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":376,"y":146},{"x":568,"y":146},{"x":568,"y":345},{"x":376,"y":345}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:33 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9176.jpg","requestId":"3a230a5e9e7a4dd5b21c5b3e95fe38b1","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":391,"y":102},{"x":597,"y":102},{"x":597,"y":306},{"x":391,"y":306}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:34 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9182.jpg","requestId":"82e746cdd73540609794c24b0328e70f","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":174,"y":155},{"x":520,"y":155},{"x":520,"y":437},{"x":174,"y":437}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:34 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9183.jpg","requestId":"6885aec11cc54e96b7357ad357707aaf","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":159,"y":141},{"x":493,"y":141},{"x":493,"y":434},{"x":159,"y":434}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:34 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9184.jpg","requestId":"49ccb879a83f46f3a47acc29349613d9","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":140,"y":113},{"x":507,"y":113},{"x":507,"y":440},{"x":140,"y":440}]},"attributes":{"system":{"frontal":false}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:35 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9185.jpg","requestId":"ad451f346da2460b93d1c6c4c75da086","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":285,"y":207},{"x":501,"y":207},{"x":501,"y":385},{"x":285,"y":385}]},"attributes":{"system":{"frontal":true}}},"objectId":"Tristan","objectType":"person"}]}
+Nov 17, 2017 9:57:35 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9186.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:35 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9187.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:35 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9188.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:35 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9189.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:35 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9190.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9199.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9198.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9191.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9203.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9201.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9200.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+WARNING: 400
+{"error":"ERROR_MEDIA_DATA","reason":"Duplicate imageId: IMG_9207.jpg","reasonCode":40033}
+Nov 17, 2017 9:57:36 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9210.jpg","requestId":"343b13822dd34123808700de2f32627f","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":358,"y":108},{"x":489,"y":108},{"x":489,"y":261},{"x":358,"y":261}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:38 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9209.jpg","requestId":"c87bffaaa9cc4b5689f71f53a4796edd","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":353,"y":129},{"x":512,"y":129},{"x":512,"y":288},{"x":353,"y":288}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:39 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9212.jpg","requestId":"249238eba8e94b009c38d8ddade6d2ee","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":336,"y":105},{"x":470,"y":105},{"x":470,"y":250},{"x":336,"y":250}]},"attributes":{"system":{"frontal":false}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:39 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9211.jpg","requestId":"98f7f1fb28dc4921b027cf6684740d72","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":351,"y":101},{"x":479,"y":101},{"x":479,"y":243},{"x":351,"y":243}]},"attributes":{"system":{"frontal":false}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:39 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9216.jpg","requestId":"1db73ce64b0a4192b8022c1861236b95","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":264,"y":160},{"x":572,"y":160},{"x":572,"y":500},{"x":264,"y":500}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:40 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9217.jpg","requestId":"7a402a2b6e4f4828b83bfedfe433ca7b","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":274,"y":104},{"x":576,"y":104},{"x":576,"y":479},{"x":274,"y":479}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:40 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9219.jpg","requestId":"1531dea251c64789b33369e0b974f763","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":336,"y":102},{"x":652,"y":102},{"x":652,"y":485},{"x":336,"y":485}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:40 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9218.jpg","requestId":"6a39b0bd89c44ec49329f18b260e94b5","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":336,"y":113},{"x":643,"y":113},{"x":643,"y":488},{"x":336,"y":488}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:41 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9222.jpg","requestId":"8392e425a08148eaad3b540b37c28275","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":385,"y":148},{"x":665,"y":148},{"x":665,"y":474},{"x":385,"y":474}]},"attributes":{"system":{"frontal":false}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:41 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9220.jpg","requestId":"b9b98bfdad0e49eba23c1ad207a07468","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":317,"y":126},{"x":628,"y":126},{"x":628,"y":471},{"x":317,"y":471}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:41 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9224.jpg","requestId":"e61a9c44c1cd471583b5487e83e0d915","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":357,"y":142},{"x":620,"y":142},{"x":620,"y":471},{"x":357,"y":471}]},"attributes":{"system":{"frontal":false}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:41 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9227.jpg","requestId":"2866f4676ff145049d7491b842996ff3","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":434,"y":145},{"x":742,"y":145},{"x":742,"y":481},{"x":434,"y":481}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:42 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9228.jpg","requestId":"61039c94828942c9a2bb30a1285f813d","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":422,"y":162},{"x":725,"y":162},{"x":725,"y":494},{"x":422,"y":494}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:42 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9229.jpg","requestId":"04b9d81671ef40e796831c98cd73975e","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":427,"y":158},{"x":723,"y":158},{"x":723,"y":511},{"x":427,"y":511}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:42 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9230.jpg","requestId":"9908687171a8437c8a576e889d3db788","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":430,"y":163},{"x":722,"y":163},{"x":722,"y":515},{"x":430,"y":515}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:42 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9231.jpg","requestId":"a2c0ddb687a74c0fbf935049248f6798","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":345,"y":122},{"x":655,"y":122},{"x":655,"y":475},{"x":345,"y":475}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:42 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9232.jpg","requestId":"bd6dbc96d0c84b2d832c650b20bed864","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":282,"y":113},{"x":601,"y":113},{"x":601,"y":467},{"x":282,"y":467}]},"attributes":{"system":{"frontal":true}}},"objectId":"Abby","objectType":"person"}]}
+Nov 17, 2017 9:57:43 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9244.jpg","requestId":"fe66035459c64023859c58a6082d4cd1","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":322,"y":175},{"x":540,"y":175},{"x":540,"y":421},{"x":322,"y":421}]},"attributes":{"system":{"frontal":false}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:43 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9247.jpg","requestId":"e022108d7e4b4043a30b0eb327e5b1f2","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":381,"y":122},{"x":590,"y":122},{"x":590,"y":407},{"x":381,"y":407}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:43 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9246.jpg","requestId":"2ba1af6889324c85bb0f77a4abb14783","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":352,"y":142},{"x":566,"y":142},{"x":566,"y":406},{"x":352,"y":406}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:44 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9250.jpg","requestId":"9d4c48c898b4460abe584ba5155b603a","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":333,"y":126},{"x":547,"y":126},{"x":547,"y":407},{"x":333,"y":407}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:44 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9248.jpg","requestId":"c9599e61b2474ba0a47f2b8c8e0b0674","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":398,"y":132},{"x":611,"y":132},{"x":611,"y":418},{"x":398,"y":418}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:44 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9249.jpg","requestId":"d3908dc04a6443979fd7446b0c9bdd50","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":350,"y":124},{"x":562,"y":124},{"x":562,"y":412},{"x":350,"y":412}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:45 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9251.jpg","requestId":"89c2d892716f446ebd08c5cf7db82038","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":345,"y":118},{"x":566,"y":118},{"x":566,"y":402},{"x":345,"y":402}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:45 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9252.jpg","requestId":"fccf6518d55d48edb182243a7c9102e1","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":351,"y":125},{"x":595,"y":125},{"x":595,"y":388},{"x":351,"y":388}]},"attributes":{"system":{"frontal":false}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:45 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9257.jpg","requestId":"8dded6eb76354c3e97ccd4d45df97110","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":315,"y":147},{"x":531,"y":147},{"x":531,"y":368},{"x":315,"y":368}]},"attributes":{"system":{"frontal":false}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:45 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9260.jpg","requestId":"c1524498a3824827bc2efa0736063c6a","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":392,"y":120},{"x":591,"y":120},{"x":591,"y":379},{"x":392,"y":379}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:46 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9261.jpg","requestId":"6f93f9913c474aa48f151bf2b9cf8d47","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":415,"y":123},{"x":614,"y":123},{"x":614,"y":377},{"x":415,"y":377}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:46 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9265.jpg","requestId":"151eb3da24c34b8488f35a7d42736269","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":347,"y":149},{"x":479,"y":149},{"x":479,"y":323},{"x":347,"y":323}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:46 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9266.jpg","requestId":"5c3463b0bb9a43a1ae83a8181622bd47","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":360,"y":140},{"x":491,"y":140},{"x":491,"y":314},{"x":360,"y":314}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:46 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9268.jpg","requestId":"947fc3d4b8a14272aaef787dc78f9f28","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":342,"y":133},{"x":474,"y":133},{"x":474,"y":295},{"x":342,"y":295}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:46 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9267.jpg","requestId":"09e3f421049745fa8c29bd8ed5c8cd6d","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":356,"y":142},{"x":486,"y":142},{"x":486,"y":313},{"x":356,"y":313}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:47 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9277.jpg","requestId":"32160ba144fb44eca7e6dd0fc12b579c","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":375,"y":71},{"x":580,"y":71},{"x":580,"y":358},{"x":375,"y":358}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:47 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9278.jpg","requestId":"159ad848b4144d56a22d50fa1241adcf","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":414,"y":95},{"x":628,"y":95},{"x":628,"y":371},{"x":414,"y":371}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:47 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9269.jpg","requestId":"81a7dad155d74c2aada9e545d8b62525","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":333,"y":123},{"x":463,"y":123},{"x":463,"y":288},{"x":333,"y":288}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:48 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9288.jpg","requestId":"8e4c9f6368d84bc693ef725ddd8d4cf0","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":246,"y":100},{"x":445,"y":100},{"x":445,"y":364},{"x":246,"y":364}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:48 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9291.jpg","requestId":"6474884b244e487c8a588cff0ce47787","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":337,"y":122},{"x":520,"y":122},{"x":520,"y":321},{"x":337,"y":321}]},"attributes":{"system":{"frontal":false}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:48 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9279.jpg","requestId":"ab34a83ac2fa41beb6695ae554965062","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":386,"y":132},{"x":597,"y":132},{"x":597,"y":384},{"x":386,"y":384}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:49 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9296.jpg","requestId":"3349460172ba4b65a5693be168a28048","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":412,"y":99},{"x":596,"y":99},{"x":596,"y":348},{"x":412,"y":348}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:49 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9294.jpg","requestId":"150d54c0a49c4a4b82a8acba8054ed7f","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":418,"y":106},{"x":600,"y":106},{"x":600,"y":345},{"x":418,"y":345}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:49 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9297.jpg","requestId":"e8986a1862964697b1608af9db3d2ea9","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":403,"y":100},{"x":581,"y":100},{"x":581,"y":339},{"x":403,"y":339}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:49 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9298.jpg","requestId":"1ebdb5df08e9452282fb2b2fad06e064","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":386,"y":107},{"x":568,"y":107},{"x":568,"y":333},{"x":386,"y":333}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:50 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9309.jpg","requestId":"83bb0dc132434612b43c03eb390f9518","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":349,"y":121},{"x":551,"y":121},{"x":551,"y":369},{"x":349,"y":369}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:50 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9310.jpg","requestId":"da761d81b4034505aa127ea30b6e41c3","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":405,"y":111},{"x":607,"y":111},{"x":607,"y":378},{"x":405,"y":378}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:50 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9311.jpg","requestId":"d419c07b47764621b579a4167ee4d501","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":313,"y":136},{"x":574,"y":136},{"x":574,"y":463},{"x":313,"y":463}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:50 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9312.jpg","requestId":"89fab8ba675c4fdfbd33679f0218435d","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":314,"y":149},{"x":575,"y":149},{"x":575,"y":457},{"x":314,"y":457}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:50 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9313.jpg","requestId":"1ea1e7516a6f4f118e446d7848851aea","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":337,"y":154},{"x":592,"y":154},{"x":592,"y":450},{"x":337,"y":450}]},"attributes":{"system":{"frontal":true}}},"objectId":"Christy","objectType":"person"}]}
+Nov 17, 2017 9:57:51 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9332.jpg","requestId":"d2fbe501c2c14656ad9aea9cace3c498","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":443,"y":298},{"x":648,"y":298},{"x":648,"y":546},{"x":443,"y":546}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:51 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9334.jpg","requestId":"121b1c0d20bc4f6fa766072677438182","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":446,"y":274},{"x":661,"y":274},{"x":661,"y":544},{"x":446,"y":544}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:51 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9335.jpg","requestId":"70451ed77f52411f98bc3f523c2c6d2b","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":499,"y":270},{"x":716,"y":270},{"x":716,"y":531},{"x":499,"y":531}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:52 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9336.jpg","requestId":"f73ff271ec8b4727a87201546dcbdf71","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":492,"y":242},{"x":714,"y":242},{"x":714,"y":498},{"x":492,"y":498}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:52 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9339.jpg","requestId":"acb4cb991b934a82a383a315e73dc638","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":213,"y":240},{"x":455,"y":240},{"x":455,"y":504},{"x":213,"y":504}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:52 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9338.jpg","requestId":"dfae18b2484044fba28a7a52e4183b8b","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":286,"y":215},{"x":514,"y":215},{"x":514,"y":480},{"x":286,"y":480}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:52 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9349.jpg","requestId":"71e0ef056a7b4fc8bf9ffba558ba3df7","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":159,"y":238},{"x":383,"y":238},{"x":383,"y":509},{"x":159,"y":509}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:53 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9348.jpg","requestId":"267aefbbbeea406cbf28f998273da5b6","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":215,"y":231},{"x":455,"y":231},{"x":455,"y":510},{"x":215,"y":510}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:53 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9341.jpg","requestId":"c4c93ebd856f4b8e9b03d310bad01868","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":393,"y":223},{"x":636,"y":223},{"x":636,"y":510},{"x":393,"y":510}]},"attributes":{"system":{"frontal":false}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:53 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9350.jpg","requestId":"4a7918e897d04e6e9bae5053251c6c0a","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":420,"y":226},{"x":637,"y":226},{"x":637,"y":481},{"x":420,"y":481}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:53 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9355.jpg","requestId":"c956d0e3f35b4b01a090c84001764d22","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":329,"y":183},{"x":521,"y":183},{"x":521,"y":399},{"x":329,"y":399}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:53 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9356.jpg","requestId":"b928005253cb49c1a71f78fe89d6a609","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":331,"y":215},{"x":541,"y":215},{"x":541,"y":478},{"x":331,"y":478}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:54 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9359.jpg","requestId":"d2206733600844198247da5febd0a471","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":190,"y":136},{"x":499,"y":136},{"x":499,"y":489},{"x":190,"y":489}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:54 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9360.jpg","requestId":"22955e1888194063b38300392e10b8f8","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":194,"y":137},{"x":499,"y":137},{"x":499,"y":494},{"x":194,"y":494}]},"attributes":{"system":{"frontal":false}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:54 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9357.jpg","requestId":"d13c4e4a4ee7408ea94accaa2ee893a4","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":395,"y":233},{"x":630,"y":233},{"x":630,"y":532},{"x":395,"y":532}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:55 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9366.jpg","requestId":"eaa4631d48924c4e805bfd5876721982","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":251,"y":177},{"x":518,"y":177},{"x":518,"y":499},{"x":251,"y":499}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:55 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9367.jpg","requestId":"ebd13f4fc6da46acada88e1c87868875","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":341,"y":77},{"x":532,"y":77},{"x":532,"y":387},{"x":341,"y":387}]},"attributes":{"system":{"frontal":false}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:55 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9365.jpg","requestId":"695678c3fc264fc1bdad619b125239b8","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":202,"y":126},{"x":517,"y":126},{"x":517,"y":496},{"x":202,"y":496}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:56 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9373.jpg","requestId":"5ceb5603cb8944ea84759bd461712395","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":270,"y":126},{"x":498,"y":126},{"x":498,"y":402},{"x":270,"y":402}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:56 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9372.jpg","requestId":"397e0f35171444c68ea6aad5615d83a2","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":252,"y":116},{"x":480,"y":116},{"x":480,"y":385},{"x":252,"y":385}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:56 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9374.jpg","requestId":"948eef3292ab4d9c885daa7a99f6203e","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":261,"y":131},{"x":503,"y":131},{"x":503,"y":414},{"x":261,"y":414}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:56 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9375.jpg","requestId":"8db03dadce6642058d75885f5ace0dbd","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":290,"y":142},{"x":547,"y":142},{"x":547,"y":451},{"x":290,"y":451}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:57 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9377.jpg","requestId":"be30acb358d14584868e987cec30aaed","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":387,"y":161},{"x":657,"y":161},{"x":657,"y":468},{"x":387,"y":468}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:57 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9376.jpg","requestId":"ff1393572dd5479aaded2b877234949f","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":310,"y":171},{"x":583,"y":171},{"x":583,"y":484},{"x":310,"y":484}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:57 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9383.jpg","requestId":"10c833a7ce9f4d45b4209c311f7950fc","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":225,"y":241},{"x":459,"y":241},{"x":459,"y":478},{"x":225,"y":478}]},"attributes":{"system":{"frontal":false}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:57 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9380.jpg","requestId":"3fc2b52cf2dd48ddb0dbf4f528a4c5fb","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":442,"y":258},{"x":601,"y":258},{"x":601,"y":485},{"x":442,"y":485}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:57 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9381.jpg","requestId":"5a81abb94b1741f39fa5f1c891020b03","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":449,"y":231},{"x":658,"y":231},{"x":658,"y":481},{"x":449,"y":481}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:58 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9401.jpg","requestId":"75a3fa06dbfe469daa79c0713ec56cf7","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":140,"y":259},{"x":427,"y":259},{"x":427,"y":575},{"x":140,"y":575}]},"attributes":{"system":{"frontal":false}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:58 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9408.jpg","requestId":"afcd7bb518f64291b954e937789cd119","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":410,"y":319},{"x":568,"y":319},{"x":568,"y":511},{"x":410,"y":511}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:58 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"imageId":"IMG_9410.jpg","requestId":"6b9da8d201db423ba9f606ad17107e9d","objects":[{"faceAnnotation":{"bounding":{"vertices":[{"x":407,"y":315},{"x":577,"y":315},{"x":577,"y":514},{"x":407,"y":514}]},"attributes":{"system":{"frontal":true}}},"objectId":"Kate","objectType":"person"}]}
+Nov 17, 2017 9:57:58 PM Recognition step2_AddObjectsToGroup
+INFO: *** STEP 2 - Adding People to Group 'family' ***
+Nov 17, 2017 9:57:58 PM Recognition genericCallback
+INFO: {"groupId":"family","status":"pending","objectIds":["Tristan","Kate","Christy","Abby"]}
+Nov 17, 2017 9:57:58 PM Recognition step3_TrainGroup
+INFO: *** Step 3 - Training Group '${groupId}' ***
+Nov 17, 2017 9:57:59 PM Recognition genericCallback
+INFO: {"groupId":"family","status":"trained","objectIds":["Abby","Christy","Kate","Tristan"]}
+Nov 17, 2017 9:57:59 PM Recognition step4_TestReco
+INFO: *** Step 4 - Test the Face Recognition ***
+Nov 17, 2017 9:58:00 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"requestId":"247e3a53a13a44c49a41111c3051a7de","objects":[{"objectId":"Tristan","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":286,"y":146},{"x":418,"y":146},{"x":418,"y":282},{"x":286,"y":282}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}}]}
+Nov 17, 2017 9:58:00 PM Recognition annotateImage
+INFO: Recognized Tristan with confidence 1.0
+Nov 17, 2017 9:58:03 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"requestId":"735f0f4bbfe144fbb1f9ccbd0a6ec8c5","objects":[{"objectId":"Abby","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":371,"y":129},{"x":508,"y":129},{"x":508,"y":286},{"x":371,"y":286}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}}]}
+Nov 17, 2017 9:58:03 PM Recognition annotateImage
+INFO: Recognized Abby with confidence 1.0
+Nov 17, 2017 9:58:04 PM Recognition genericCallback
+INFO: {"image":{"width":1280,"height":853,"orientation":1},"requestId":"f8746ed4e7bd4b6297e11da0f7999af1","objects":[{"objectId":"Abby","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":970,"y":360},{"x":1056,"y":360},{"x":1056,"y":458},{"x":970,"y":458}]},"recognitionConfidence":0.0613,"attributes":{"system":{"frontal":true}}}},{"objectId":"Tristan","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":766,"y":253},{"x":849,"y":253},{"x":849,"y":349},{"x":766,"y":349}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}},{"objectId":"Kate","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":369,"y":329},{"x":441,"y":329},{"x":441,"y":416},{"x":369,"y":416}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}},{"objectId":"Abby","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":565,"y":317},{"x":637,"y":317},{"x":637,"y":404},{"x":565,"y":404}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}},{"objectId":"Christy","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":210,"y":346},{"x":282,"y":346},{"x":282,"y":445},{"x":210,"y":445}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}}]}
+Nov 17, 2017 9:58:04 PM Recognition annotateImage
+INFO: An 'Unknown' person was found since recognition confidence 0.0613 is below the minimum threshold of 0.5
+Nov 17, 2017 9:58:04 PM Recognition annotateImage
+INFO: Recognized Tristan with confidence 1.0
+Nov 17, 2017 9:58:04 PM Recognition annotateImage
+INFO: Recognized Kate with confidence 1.0
+Nov 17, 2017 9:58:04 PM Recognition annotateImage
+INFO: Recognized Abby with confidence 1.0
+Nov 17, 2017 9:58:04 PM Recognition annotateImage
+INFO: Recognized Christy with confidence 1.0
+Nov 17, 2017 9:58:06 PM Recognition genericCallback
+INFO: {"image":{"width":1280,"height":853,"orientation":1},"requestId":"fcce5aaeecba43d98413827656f85790","objects":[{"objectId":"Tristan","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":766,"y":183},{"x":853,"y":183},{"x":853,"y":280},{"x":766,"y":280}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}},{"objectId":"Abby","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":983,"y":289},{"x":1063,"y":289},{"x":1063,"y":385},{"x":983,"y":385}]},"recognitionConfidence":0.0695,"attributes":{"system":{"frontal":true}}}},{"objectId":"Kate","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":360,"y":254},{"x":432,"y":254},{"x":432,"y":343},{"x":360,"y":343}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}},{"objectId":"Christy","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":212,"y":275},{"x":286,"y":275},{"x":286,"y":378},{"x":212,"y":378}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}},{"objectId":"Abby","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":563,"y":237},{"x":637,"y":237},{"x":637,"y":331},{"x":563,"y":331}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}}]}
+Nov 17, 2017 9:58:06 PM Recognition annotateImage
+INFO: Recognized Tristan with confidence 1.0
+Nov 17, 2017 9:58:06 PM Recognition annotateImage
+INFO: An 'Unknown' person was found since recognition confidence 0.0695 is below the minimum threshold of 0.5
+Nov 17, 2017 9:58:06 PM Recognition annotateImage
+INFO: Recognized Kate with confidence 1.0
+Nov 17, 2017 9:58:06 PM Recognition annotateImage
+INFO: Recognized Christy with confidence 1.0
+Nov 17, 2017 9:58:06 PM Recognition annotateImage
+INFO: Recognized Abby with confidence 1.0
+Nov 17, 2017 9:58:06 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"requestId":"43f2c3f6a5a348a6b32b4d64e3ba67dd","objects":[{"objectId":"Christy","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":356,"y":122},{"x":555,"y":122},{"x":555,"y":362},{"x":356,"y":362}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}}]}
+Nov 17, 2017 9:58:06 PM Recognition annotateImage
+INFO: Recognized Christy with confidence 1.0
+Nov 17, 2017 9:58:07 PM Recognition genericCallback
+INFO: {"image":{"width":853,"height":1280,"orientation":1},"requestId":"9963065e163f4d1aaa619e66c85cba15","objects":[{"objectId":"Kate","objectType":"person","faceAnnotation":{"bounding":{"vertices":[{"x":318,"y":179},{"x":499,"y":179},{"x":499,"y":385},{"x":318,"y":385}]},"recognitionConfidence":1.0,"attributes":{"system":{"frontal":true}}}}]}
+Nov 17, 2017 9:58:07 PM Recognition annotateImage
+INFO: Recognized Kate with confidence 1.0
+BUILD SUCCESSFUL (total time: 47 seconds)
